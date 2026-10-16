@@ -5,7 +5,7 @@ from pathlib import Path
 st.set_page_config(page_title="EduPro app", layout="wide")
 st.title("EduPro data")
 
-file = Path(__file__).parent / "data" / "EduPro_Online_Platform.xlsx"
+file = Path(__file__).parent / "EduPro_Online_Platform.xlsx"
 
 users = pd.read_excel(file, sheet_name="Users")
 courses = pd.read_excel(file, sheet_name="Courses")
